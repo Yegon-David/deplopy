@@ -3,11 +3,14 @@ __pycache__/
 *.py[oc]
 build/
 dist/
+test/config/
+test/config/*
 wheels/
 *.egg-info
 
 # Virtual environments
 .venv
+# .env*
 
 #outputs
-*.zip
+# *.zip
