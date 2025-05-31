@@ -11,6 +11,19 @@ def zip_folder(path_lists:list[str],out_file:str,rel_base:str,verbose:bool = Fal
     print("Finished:")
 
 def unzip(file:str,destinaton="."):
-    with zipfile.ZipFile(file,"r") as zip:
-        zip.extractall(destinaton)
+    try:
+        with zipfile.ZipFile(file,"r") as zip:
+            zip.extractall(destinaton)
+    except Exception as e:
+        print("Unzipping error:",str(e))
+
+
+if __name__ == "__main__":
+    def zip_django(base_dir):
+        from file import get_file_structure
+        files = get_file_structure(base_dir)
+        zip_folder(files,"app1.zip",base_dir)
+    
+    zip_django("F:\\projects\\deplopy\\test\\app1")
+
 

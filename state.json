@@ -1,0 +1,34 @@
+{
+    "project":"app1",
+    "destination":"F:\\projects\\softest",
+    "db":{
+        "install":true,
+        "bin":"C:\\Program Files\\MariaDB 11.7\\bin\\mysql.exe",
+        "tested":true,
+        "done":true
+    },
+    "app":{
+        "loaded":true,
+        "pkgs":{
+            "sync":true,
+            "checked":true
+        },
+        "done":true
+    },
+    "server":{
+        "loaded":true,
+        "renamed":true,
+        "app_server":{
+            "loaded":true,
+            "installed":true,
+            "done":true
+        },
+        "nginx_server":{
+            "loaded":true,
+            "installed":true,
+            "done" : false 
+        },
+        "done":false
+    }
+
+}

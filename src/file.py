@@ -6,6 +6,7 @@ EX = [
     ".venv",
     "venv",
     "env",
+    ".env.local",
     "__pycache__",
     "db.sqlite3",
     "static",
